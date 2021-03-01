@@ -6,4 +6,8 @@ public class Main {
         System.out.println("hello world");
         System.out.println("hello world2");
     }
+    
+    public void sayHi(String name) {
+        System.out.println(String.format("Hi %s", name));
+    }
 }
