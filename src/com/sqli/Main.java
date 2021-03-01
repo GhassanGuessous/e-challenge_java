@@ -6,4 +6,7 @@ public class Main {
         System.out.println("hello world");
         System.out.println("hello world2");
     }
+    public static void functionMouad(){
+        System.out.println("test");
+    }
 }
