@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<project name="Ant Training Project" default="run">
+
+    <target name="clean">
+        <delete dir="out"/>
+        <delete dir="jar"/>
+    </target>
+
+    <target name="compile" depends="clean">
+        <mkdir dir="out"/>
+        <javac srcdir="src" destdir="out"/>
+    </target>
+
+    <target name="jar" depends="compile">
+        <mkdir dir="jar"/>
+        <jar destfile="jar/e-challenge.jar" basedir="out">
+            <manifest>
+                <attribute name="Main-Class" value="com.sqli.Main" />
+            </manifest>
+        </jar>
+    </target>
+
+    <target name="run" depends="jar">
+        <java jar="jar/e-challenge.jar" fork="true" />
+    </target>
+</project>

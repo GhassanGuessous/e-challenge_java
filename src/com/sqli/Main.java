@@ -6,4 +6,9 @@ public class Main {
         System.out.println("hello world");
         System.out.println("hello world2");
     }
+
+
+    public static void welcome(String name) {
+        System.out.println("Welcome: " + name);
+    }
 }
