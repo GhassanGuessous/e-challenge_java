@@ -3,6 +3,7 @@ package com.sqli;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("hello world");
+        ATestClass testClass = new ATestClass();
+        testClass.ATestMethod("A sample text!");
     }
 }
